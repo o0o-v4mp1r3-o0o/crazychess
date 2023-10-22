@@ -1,0 +1,11 @@
+.sqblack {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(88, 85, 85);
+}
+
+.sqwhite {
+    width: 100px;
+    height: 100px;
+    background-color: ghostwhite;
+}

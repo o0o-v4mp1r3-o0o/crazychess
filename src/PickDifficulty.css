@@ -1,0 +1,66 @@
+button{
+    float: left;
+    font-weight: bolder;
+}
+
+.buttonContainer{
+    position: absolute;
+    left:300px;
+    top: 250px;
+}
+
+.noviceP{
+    position: absolute;
+    top:-50px;
+    left: 70px;
+    color: red;
+    font-size: 48px;
+}
+.noviceL{
+    position: absolute;
+    left: 70px;
+    color: red;
+    font-size: 48px;
+}
+
+.amateurP{
+    position: absolute;
+    top:-50px;
+    left: 370px;
+    color: red;
+    font-size: 48px;
+}
+.amateurL{
+    position: absolute;
+    left: 370px;
+    color: red;
+    font-size: 48px;
+}
+
+.proP{
+    position: absolute;
+    top:-50px;
+    left: 750px;
+    color: red;
+    font-size: 48px;
+}
+.proL{
+    position: absolute;
+    left: 690px;
+    color: red;
+    font-size: 48px;
+}
+
+.grandmasterP{
+    position: absolute;
+    top:-50px;
+    left: 957px;
+    color: red;
+    font-size: 48px;
+}
+.grandmasterL{
+    position: absolute;
+    left: 990px;
+    color: red;
+    font-size: 48px;
+}

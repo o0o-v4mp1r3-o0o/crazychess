@@ -1,0 +1,11 @@
+.goBack{
+    display: flex;
+}
+
+.success{
+    color:green;
+}
+
+.fail{
+    color:red;
+}

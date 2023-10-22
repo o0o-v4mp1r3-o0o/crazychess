@@ -1,0 +1,45 @@
+.menu{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./Images/MenuImage1.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+button{
+    display:flex;
+}
+.playP{
+    position: absolute;
+    top: 80px;
+    left:110px;
+    color: red;
+    font-size: 48px;
+}
+.allButtons{
+    position: absolute;
+    margin-left: 1600px;
+}
+.codeP{
+    position: absolute;
+    top: 285px;
+    left:40px;
+    color: red;
+    font-size: 48px;
+}
+h1{
+    color:red;
+    font-size: 100px;
+    position: absolute;
+    top: -200px;
+    left: -50px;
+    font-style: oblique;
+}
+.mainTitle{
+    color:red;
+    font-size: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-style: oblique;
+}

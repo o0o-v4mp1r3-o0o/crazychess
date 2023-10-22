@@ -1,0 +1,36 @@
+.defeated{
+    width: 100vw;
+    height: 99.2vh;
+    background-image: url('./Images/defeatedImage.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: red;
+    font-size: 100px;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+.diedtext{
+    margin-left: 750px;
+}
+
+.backToMenu{
+    margin-top: 300px;
+    background-image: url('./Images/menuButton.jpg');
+    background-size:500px;
+    background-repeat: no-repeat;
+    width: 40vw;
+    height: 35vh;
+}
+
+.backText{
+    position:absolute;
+    margin-top: 830px;
+    margin-left: 870px;
+    font-size: 60px;
+}
+
+.backToMenu > h1:hover {
+    background: gold
+}
