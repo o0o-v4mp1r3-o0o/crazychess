@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Menu.css";
 import { menuButton, menuButtonH } from "./Images";
+import Database from "./Database";
 function Menu({ setVisible, setDifficulty, setCode }) {
   const [hoverGame, sethoverGame] = useState(false);
   const [hoverCode, sethoverCode] = useState(false);
@@ -33,6 +34,7 @@ function Menu({ setVisible, setDifficulty, setCode }) {
           onClick={(e) => {
             setVisible(false);
             setCode(true);
+            Database();
           }}
           onMouseEnter={(e) => {
             sethoverCode(true);

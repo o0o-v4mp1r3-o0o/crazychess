@@ -18,8 +18,8 @@ function App() {
   const test = useRef();
   function pagePicker() {
     console.log("rendered");
-    test.current = LevelConstructor(41);
-    console.log(test.current);
+    // test.current = LevelConstructor(41);
+    // console.log(test.current);
     if (MenuScreen) {
       return (
         <Menu
