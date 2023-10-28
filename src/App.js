@@ -6,7 +6,6 @@ import DefeatedScreen from "./DefeatedScreen";
 import Menu from "./Menu";
 import EnterCode from "./EnterCode";
 import PickDifficulty from "./PickDifficulty";
-import LevelConstructor from "./LevelConstructor";
 import HighScores from "./HighScores";
 function App() {
   const [MenuScreen, setMenuScreen] = useState(true);
@@ -17,7 +16,6 @@ function App() {
   const [highScoreScreen, sethighScoreScreen] = useState(false);
   const level = useRef(0);
   const maxlevel = useRef(0);
-  const test = useRef();
   function pagePicker() {
     console.log("rendered");
     if (MenuScreen) {

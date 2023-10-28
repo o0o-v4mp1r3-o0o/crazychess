@@ -35,7 +35,6 @@ function Menu({ setVisible, setDifficulty, setCode, setHS }) {
           onClick={(e) => {
             setVisible(false);
             setCode(true);
-            Database();
           }}
           onMouseEnter={(e) => {
             sethoverCode(true);

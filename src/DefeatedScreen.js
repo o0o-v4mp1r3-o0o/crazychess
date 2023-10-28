@@ -47,7 +47,7 @@ function DefeatedScreen({ setVisible, setMenuScreen, levelNum }) {
         </div>
       </div>
       {!success ? (
-        <form onSubmit={handleSubmit}>
+        <form className="HSForm" onSubmit={handleSubmit}>
           <label>
             You've placed #{rank} out of {totalCount} total players! Enter your
             name and submit your score!
