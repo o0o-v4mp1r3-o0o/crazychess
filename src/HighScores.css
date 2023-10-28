@@ -1,0 +1,26 @@
+.HSTable{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: red;
+    margin-top: 50px;
+}
+
+.databaseResults{
+    display:flex;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.LeaderTitle{
+  margin:auto;
+  width: 10%;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.User{
+    margin-left: 850px;
+}
+
+.HighScore{
+    margin-left: 160px;
+}

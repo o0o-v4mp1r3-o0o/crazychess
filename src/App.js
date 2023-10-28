@@ -7,25 +7,26 @@ import Menu from "./Menu";
 import EnterCode from "./EnterCode";
 import PickDifficulty from "./PickDifficulty";
 import LevelConstructor from "./LevelConstructor";
+import HighScores from "./HighScores";
 function App() {
   const [MenuScreen, setMenuScreen] = useState(true);
-  const [showBoard, setShowBoard] = useState(true);
+  const [showBoard, setShowBoard] = useState(false);
   const [defeatedScreen, setdefeatedScreen] = useState(false);
   const [codeScreen, setCodeScreen] = useState(false);
   const [difficultyScreen, setDifficultyScreen] = useState(false);
+  const [highScoreScreen, sethighScoreScreen] = useState(false);
   const level = useRef(0);
   const maxlevel = useRef(0);
   const test = useRef();
   function pagePicker() {
     console.log("rendered");
-    // test.current = LevelConstructor(41);
-    // console.log(test.current);
     if (MenuScreen) {
       return (
         <Menu
           setVisible={setMenuScreen}
           setDifficulty={setDifficultyScreen}
           setCode={setCodeScreen}
+          setHS={sethighScoreScreen}
         />
       );
     } else if (codeScreen) {
@@ -47,6 +48,13 @@ function App() {
           maxlevel={maxlevel}
         />
       );
+    } else if (highScoreScreen) {
+      return (
+        <HighScores
+          setVisible={sethighScoreScreen}
+          backToMenu={setMenuScreen}
+        />
+      );
     } else if (showBoard && !defeatedScreen) {
       return (
         <Board
@@ -64,6 +72,7 @@ function App() {
         <DefeatedScreen
           setVisible={setdefeatedScreen}
           setMenuScreen={setMenuScreen}
+          levelNum={level}
         />
       );
     }
