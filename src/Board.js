@@ -470,6 +470,7 @@ function Board({
       }, 80);
       pawnList.current.clear();
       realPawnBoard.current.fill(false);
+      arePawnsDead();
     } else if (hotbarList[i - 1] === 5) {
       mirrorKnightExists.current = true;
       let x = indexMap.current.get(prevind.current).x;
