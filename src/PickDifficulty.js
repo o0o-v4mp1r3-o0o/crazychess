@@ -100,7 +100,7 @@ function PickDifficulty({
         </button>
         <button
           onClick={(e) => {
-            if (maxlevel.current > 59 && maxlevel.current < 81) {
+            if (maxlevel.current > 59) {
               setVisible(false);
               showboard(true);
             }

@@ -598,10 +598,19 @@ function Board({
 
   function arePawnsDead() {
     if (numPawns.current === 0) {
-      setVisible(false);
-      if (setLevel.current < 81) setLevel.current++;
-      if (setLevel.current > setMaxLevel.current) {
-        setMaxLevel.current = setLevel.current;
+      if (setLevel.current < 81) {
+        setLevel.current++;
+        if (setLevel.current < 81) {
+          setVisible(false);
+        } else {
+          setDefeat(true);
+        }
+
+        if (setLevel.current > setMaxLevel.current) {
+          setMaxLevel.current = setLevel.current;
+        }
+      } else {
+        setDefeat(true);
       }
     }
     if (lives.current === 0) {

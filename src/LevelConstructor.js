@@ -824,7 +824,13 @@ function LevelConstructor(levelNum) {
     generateRows(20, 4);
     shuffleArray(levelPawnArray);
     pawnInserter(62, 0, 70, 1, 20, 2, 6, 3, 16, 4, 11, 5);
+    generateRows(1, 1);
     spawnRate = 1300;
+    pawnCounter();
+  }
+  function level81() {
+    generateRows(1, 1);
+    spawnRate = 500;
     pawnCounter();
   }
 
@@ -991,7 +997,7 @@ function LevelConstructor(levelNum) {
   } else if (levelNum === 80) {
     level80();
   } else {
-    level80();
+    level81();
   }
 
   if (levelNum < 21) {
@@ -1003,7 +1009,7 @@ function LevelConstructor(levelNum) {
   } else {
     lives = 50;
   }
-
+  if (levelNum > 80) lives = 1;
   return { levelPawnArray, numpawns, spawnRate, lives };
 }
 

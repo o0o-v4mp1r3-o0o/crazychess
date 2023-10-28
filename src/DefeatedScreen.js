@@ -35,7 +35,7 @@ function DefeatedScreen({ setVisible, setMenuScreen, levelNum }) {
   return (
     <div className="defeated">
       <div className="diedtext">
-        You Died
+        {levelNum.current < 81 ? "You Died" : "You've Beaten the game!"}
         <div
           className="backToMenu"
           onClick={(e) => {
