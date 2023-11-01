@@ -129,6 +129,9 @@ function Board({
               mirrorKnightLocation.current = indexMap.current.get(mirrorMove);
               boolboard.current[mirrorMove] = true;
               boolboard.current[prevMirrorMove] = false;
+              if (allyPawnArray.current[mirrorMove]) {
+                allyPawnArray.current[mirrorMove] = false;
+              }
               if (pawnList.current.has(mirrorMove)) {
                 realPawnBoard.current[mirrorMove] = false;
                 let iteratePawnList = pawnList.current;
@@ -296,6 +299,9 @@ function Board({
               mirrorKnightLocation.current = indexMap.current.get(mirrorMove);
               boolboard.current[mirrorMove] = true;
               boolboard.current[prevMirrorMove] = false;
+              if (allyPawnArray.current[mirrorMove]) {
+                allyPawnArray.current[mirrorMove] = false;
+              }
               if (pawnList.current.has(mirrorMove)) {
                 realPawnBoard.current[mirrorMove] = false;
                 let iteratePawnList = pawnList.current;
