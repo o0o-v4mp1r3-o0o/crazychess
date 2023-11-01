@@ -44,7 +44,7 @@ function PickDifficulty({
         </button>
         <button
           onClick={(e) => {
-            if (maxlevel.current > 19 && maxlevel.current < 39) {
+            if (maxlevel.current > 19 && maxlevel.current <= 39) {
               setVisible(false);
               showboard(true);
             } else if (maxlevel.current > 39) {
@@ -65,14 +65,14 @@ function PickDifficulty({
           ></img>
           <p className="amateurP">Amateur</p>
           <p className="amateurL">
-            {maxlevel.current > 19 && maxlevel.current < 39
+            {maxlevel.current > 19 && maxlevel.current <= 39
               ? "Level:" + " " + maxlevel.current
               : null}
           </p>
         </button>
         <button
           onClick={(e) => {
-            if (maxlevel.current > 39 && maxlevel.current < 59) {
+            if (maxlevel.current > 39 && maxlevel.current <= 59) {
               setVisible(false);
               showboard(true);
             } else if (maxlevel.current > 59) {
@@ -93,7 +93,7 @@ function PickDifficulty({
           ></img>
           <p className="proP">Pro</p>
           <p className="proL">
-            {maxlevel.current > 39 && maxlevel.current < 59
+            {maxlevel.current > 39 && maxlevel.current <= 59
               ? "Level:" + " " + maxlevel.current
               : null}
           </p>
@@ -117,7 +117,7 @@ function PickDifficulty({
           ></img>
           <p className="grandmasterP">GrandMaster</p>
           <p className="grandmasterL">
-            {maxlevel.current > 59 && maxlevel.current < 81
+            {maxlevel.current > 59 && maxlevel.current <= 81
               ? "Level:" + " " + maxlevel.current
               : null}
           </p>
