@@ -572,11 +572,13 @@ function Board({
       for (let i = 0; i < wave.length; i++) {
         let spawnSquare = wave[i] - 1;
         if (spawnSquare < 0) continue;
+        let entered = false;
+        let foundnewSquare = false;
         if (
           realPawnBoard.current[spawnSquare] ||
           boolboard.current[spawnSquare]
         ) {
-          let foundnewSquare = false;
+          entered = true;
           for (let c = 0; c < 8; c++) {
             if (
               !realPawnBoard.current[c] &&
@@ -592,10 +594,12 @@ function Board({
             levelArray.current.push([wave[i] - 1]);
           }
         }
-        realPawnBoard.current[spawnSquare] = true;
-        pawnList.current.set(spawnSquare, indexMap.current.get(spawnSquare));
-        if (powerUpLocations.current[spawnSquare] > 0) {
-          powerUpLocations.current[spawnSquare] = 0;
+        if (!entered || (entered && foundnewSquare)) {
+          realPawnBoard.current[spawnSquare] = true;
+          pawnList.current.set(spawnSquare, indexMap.current.get(spawnSquare));
+          if (powerUpLocations.current[spawnSquare] > 0) {
+            powerUpLocations.current[spawnSquare] = 0;
+          }
         }
       }
       setpawnBoard(realPawnBoard.current);
