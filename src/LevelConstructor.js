@@ -634,7 +634,7 @@ function LevelConstructor(levelNum) {
     generateRows(5, 4);
     shuffleArray(levelPawnArray);
     pawnInserter(20, 0, 13, 1, 1, 2);
-    spawnRate = 1300;
+    spawnRate = 1200;
     pawnCounter();
   }
   function level62() {
@@ -644,7 +644,7 @@ function LevelConstructor(levelNum) {
     generateRows(5, 4);
     shuffleArray(levelPawnArray);
     pawnInserter(20, 0, 18, 1, 6, 2);
-    spawnRate = 1300;
+    spawnRate = 1200;
     pawnCounter();
   }
   function level63() {
@@ -654,7 +654,7 @@ function LevelConstructor(levelNum) {
     generateRows(5, 4);
     shuffleArray(levelPawnArray);
     pawnInserter(20, 0, 23, 1, 6, 2);
-    spawnRate = 1300;
+    spawnRate = 1200;
     pawnCounter();
   }
   function level64() {
@@ -664,7 +664,7 @@ function LevelConstructor(levelNum) {
     generateRows(5, 4);
     shuffleArray(levelPawnArray);
     pawnInserter(25, 0, 23, 1, 6, 2);
-    spawnRate = 1300;
+    spawnRate = 1200;
     pawnCounter();
   }
   function level65() {
@@ -674,7 +674,7 @@ function LevelConstructor(levelNum) {
     generateRows(5, 4);
     shuffleArray(levelPawnArray);
     pawnInserter(25, 0, 28, 1, 6, 2);
-    spawnRate = 1300;
+    spawnRate = 1200;
     pawnCounter();
   }
   function level66() {
@@ -684,7 +684,7 @@ function LevelConstructor(levelNum) {
     generateRows(5, 4);
     shuffleArray(levelPawnArray);
     pawnInserter(25, 0, 33, 1, 6, 2);
-    spawnRate = 1300;
+    spawnRate = 1200;
     pawnCounter();
   }
   function level67() {
@@ -694,7 +694,7 @@ function LevelConstructor(levelNum) {
     generateRows(5, 4);
     shuffleArray(levelPawnArray);
     pawnInserter(27, 0, 33, 1, 6, 2);
-    spawnRate = 1300;
+    spawnRate = 1200;
     pawnCounter();
   }
   function level68() {
@@ -704,7 +704,7 @@ function LevelConstructor(levelNum) {
     generateRows(6, 4);
     shuffleArray(levelPawnArray);
     pawnInserter(27, 0, 33, 1, 7, 2);
-    spawnRate = 1300;
+    spawnRate = 1200;
     pawnCounter();
   }
   function level69() {
@@ -714,7 +714,7 @@ function LevelConstructor(levelNum) {
     generateRows(6, 4);
     shuffleArray(levelPawnArray);
     pawnInserter(27, 0, 38, 1, 7, 2, 1, 3);
-    spawnRate = 1300;
+    spawnRate = 1200;
     pawnCounter();
   }
   function level70() {
@@ -724,7 +724,7 @@ function LevelConstructor(levelNum) {
     generateRows(8, 4);
     shuffleArray(levelPawnArray);
     pawnInserter(27, 0, 40, 1, 7, 2, 1, 3);
-    spawnRate = 1300;
+    spawnRate = 1200;
     pawnCounter();
   }
   function level71() {
@@ -734,7 +734,7 @@ function LevelConstructor(levelNum) {
     generateRows(8, 4);
     shuffleArray(levelPawnArray);
     pawnInserter(27, 0, 40, 1, 7, 2, 1, 3, 1, 4);
-    spawnRate = 1300;
+    spawnRate = 1200;
     pawnCounter();
   }
   function level72() {
@@ -744,7 +744,7 @@ function LevelConstructor(levelNum) {
     generateRows(8, 4);
     shuffleArray(levelPawnArray);
     pawnInserter(37, 0, 50, 1, 7, 2, 1, 3, 1, 4);
-    spawnRate = 1300;
+    spawnRate = 1200;
     pawnCounter();
   }
   function level73() {
@@ -754,7 +754,7 @@ function LevelConstructor(levelNum) {
     generateRows(8, 4);
     shuffleArray(levelPawnArray);
     pawnInserter(47, 0, 50, 1, 7, 2, 1, 3, 1, 4);
-    spawnRate = 1300;
+    spawnRate = 1200;
     pawnCounter();
   }
   function level74() {
@@ -764,7 +764,7 @@ function LevelConstructor(levelNum) {
     generateRows(10, 4);
     shuffleArray(levelPawnArray);
     pawnInserter(47, 0, 60, 1, 7, 2, 1, 3, 1, 4);
-    spawnRate = 1300;
+    spawnRate = 1200;
     pawnCounter();
   }
   function level75() {
@@ -774,7 +774,7 @@ function LevelConstructor(levelNum) {
     generateRows(12, 4);
     shuffleArray(levelPawnArray);
     pawnInserter(52, 0, 60, 1, 7, 2, 1, 3, 1, 4);
-    spawnRate = 1300;
+    spawnRate = 1200;
     pawnCounter();
   }
   function level76() {
@@ -784,7 +784,7 @@ function LevelConstructor(levelNum) {
     generateRows(14, 4);
     shuffleArray(levelPawnArray);
     pawnInserter(52, 0, 65, 1, 7, 2, 1, 3, 1, 4);
-    spawnRate = 1300;
+    spawnRate = 1200;
     pawnCounter();
   }
   function level77() {
@@ -794,7 +794,7 @@ function LevelConstructor(levelNum) {
     generateRows(14, 4);
     shuffleArray(levelPawnArray);
     pawnInserter(52, 0, 66, 1, 10, 2, 1, 3, 1, 4, 1, 5);
-    spawnRate = 1300;
+    spawnRate = 1200;
     pawnCounter();
   }
   function level78() {
@@ -804,7 +804,7 @@ function LevelConstructor(levelNum) {
     generateRows(17, 4);
     shuffleArray(levelPawnArray);
     pawnInserter(52, 0, 70, 1, 15, 2, 1, 3, 1, 4, 1, 5);
-    spawnRate = 1300;
+    spawnRate = 1200;
     pawnCounter();
   }
   function level79() {
@@ -814,7 +814,7 @@ function LevelConstructor(levelNum) {
     generateRows(17, 4);
     shuffleArray(levelPawnArray);
     pawnInserter(62, 0, 70, 1, 20, 2, 6, 3, 1, 4, 1, 5);
-    spawnRate = 1300;
+    spawnRate = 1200;
     pawnCounter();
   }
   function level80() {
@@ -825,12 +825,12 @@ function LevelConstructor(levelNum) {
     shuffleArray(levelPawnArray);
     pawnInserter(62, 0, 70, 1, 20, 2, 6, 3, 16, 4, 11, 5);
     generateRows(1, 1);
-    spawnRate = 1300;
+    spawnRate = 1200;
     pawnCounter();
   }
   function level81() {
     generateRows(1, 1);
-    spawnRate = 500;
+    spawnRate = 200;
     pawnCounter();
   }
 
@@ -1003,11 +1003,11 @@ function LevelConstructor(levelNum) {
   if (levelNum < 21) {
     lives = 10;
   } else if (levelNum > 20 && levelNum < 41) {
-    lives = 20;
+    lives = 10;
   } else if (levelNum > 40 && levelNum < 61) {
-    lives = 40;
+    lives = 10;
   } else {
-    lives = 50;
+    lives = 5;
   }
   if (levelNum > 80) lives = 1;
   return { levelPawnArray, numpawns, spawnRate, lives };
