@@ -623,7 +623,7 @@ function Board({
         setDefeat(true);
       }
     }
-    if (lives.current === 0) {
+    if (lives.current <= 0) {
       setDefeat(true);
     }
   }
