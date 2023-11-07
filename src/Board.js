@@ -57,6 +57,7 @@ function Board({
   const invisTimer = useRef(false);
   const freezeTimer = useRef(false);
   const freezeAnimation = useRef(false);
+  const freezeTimerStorage = useRef([]);
   const knightExplosionTimer = useRef(false);
   const mirrorKnightExists = useRef(false);
   const mirrorKnightLocation = useRef();
@@ -487,12 +488,19 @@ function Board({
     } else if (hotbarList[i - 1] === 6) {
       freezeTimer.current = true;
       freezeAnimation.current = true;
-      setTimeout(() => {
+      if (freezeTimerStorage.current.length > 0) {
+        clearTimeout(freezeTimerStorage.current[0]);
+        clearTimeout(freezeTimerStorage.current[1]);
+      }
+      freezeTimerStorage.current.length = 0;
+      const xx = setTimeout(() => {
         freezeTimer.current = false;
-      }, 10000);
-      setTimeout(() => {
+      }, 4000);
+      const yy = setTimeout(() => {
         freezeAnimation.current = false;
-      }, 8000);
+      }, 2000);
+      freezeTimerStorage.current.push(xx);
+      freezeTimerStorage.current.push(yy);
     }
     if (hotbarList[i - 1] !== 2) {
       let gg = [...hotbarList];
@@ -678,8 +686,8 @@ function Board({
     let gg = [];
     gg.push(4);
     gg.push(6);
-    gg.push(2);
-    gg.push(3);
+    gg.push(2); //2
+    gg.push(3); //3
     gg.push(0);
     sethotbarList(gg);
     mirrorKnightLocation.current = [-1, -1];
