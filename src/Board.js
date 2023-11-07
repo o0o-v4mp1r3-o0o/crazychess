@@ -844,8 +844,8 @@ function Board({
     disposer = [];
     incrementer1++;
   }
+  if (gameRef.current !== undefined) gameRef.current.focus();
   console.log(document.activeElement);
-  console.log(deathFlag.current);
   return (
     <div className="board">
       <video src={backgroundVid} autoPlay loop muted id="x" />
