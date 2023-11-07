@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import "./Menu.css";
 import { menuButton, menuButtonH } from "./Images";
-import Database from "./Database";
+import { useMediaQuery } from "react-responsive";
 function Menu({ setVisible, setDifficulty, setCode, setHS }) {
   const [hoverGame, sethoverGame] = useState(false);
   const [hoverCode, sethoverCode] = useState(false);
   const [hoverScore, sethoverScore] = useState(false);
+  const isMobile = useMediaQuery({ query: "(max-width: 1000px)" });
+  const textStyle = isMobile ? "mobilemenu" : "menu";
   return (
     <div className="menu">
       <h1 className="mainTitle">The Lone Knight</h1>
