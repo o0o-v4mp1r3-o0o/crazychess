@@ -495,10 +495,10 @@ function Board({
       freezeTimerStorage.current.length = 0;
       const xx = setTimeout(() => {
         freezeTimer.current = false;
-      }, 4000);
+      }, 10000);
       const yy = setTimeout(() => {
         freezeAnimation.current = false;
-      }, 2000);
+      }, 8000);
       freezeTimerStorage.current.push(xx);
       freezeTimerStorage.current.push(yy);
     }
